@@ -10,27 +10,24 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="HCOStartTimer_Watch_App" customModuleProvider="target">
                     <items>
-                        <timer width="114" height="26" alignment="left" enabled="YES" format="short" id="y6Q-oS-75E">
-                            <calendarUnit key="units" minute="YES" second="YES"/>
-                        </timer>
-                        <label alignment="center" text="Is counting" textAlignment="left" id="iGB-LI-8Lt"/>
-                        <button width="1" alignment="left" title="Snooze" id="4Gh-1s-cT4">
-                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            <color key="backgroundColor" red="0.16862745579999999" green="0.94117653369999998" blue="0.1215686351" alpha="1" colorSpace="deviceRGB"/>
+                        <button width="1" alignment="center" verticalAlignment="bottom" title="Call" id="cBl-uK-Fc5">
+                            <color key="titleColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <action selector="snoozeButton" destination="AgC-eL-Hgc" id="ji8-24-7mu"/>
+                                <action selector="call" destination="AgC-eL-Hgc" id="m1y-yQ-hZ3"/>
                             </connections>
                         </button>
-                        <button width="1" alignment="left" title="Stop" id="Mhn-bW-tMK">
-                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <label width="131.5" alignment="center" text="How's it going?" textAlignment="center" id="Fmt-tB-LF6"/>
+                        <button width="1" alignment="center" verticalAlignment="bottom" title="Snooze" id="jOx-sY-5Vn">
+                            <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <action selector="stopButton" destination="AgC-eL-Hgc" id="CVt-OI-Mls"/>
+                                <action selector="snooze" destination="AgC-eL-Hgc" id="0Ve-MJ-4sX"/>
                             </connections>
                         </button>
                     </items>
                     <connections>
-                        <outlet property="timerLabel" destination="y6Q-oS-75E" id="Kep-tE-7rD"/>
+                        <outlet property="callButton" destination="cBl-uK-Fc5" id="ThD-5L-mP4"/>
+                        <outlet property="snoozeButton" destination="jOx-sY-5Vn" id="TPv-g7-rmi"/>
+                        <outlet property="statusLabel" destination="Fmt-tB-LF6" id="OL1-kt-jUD"/>
                     </connections>
                 </controller>
             </objects>

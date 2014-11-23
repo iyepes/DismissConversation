@@ -1,9 +1,9 @@
 //
 //  InterfaceController.swift
-//  HCOStartTimer WatchKit Extension
+//  ThisIsAwkward WatchKit Extension
 //
-//  Created by Isabel Yepes on 23/11/14.
-//  Copyright (c) 2014 Isabel Yepes. All rights reserved.
+//  Created by Jonathan Schapiro on 11/23/14.
+//  Copyright (c) 2014 Jonathan Schapiro. All rights reserved.
 //
 
 import WatchKit
@@ -11,38 +11,70 @@ import Foundation
 
 
 class InterfaceController: WKInterfaceController {
-
-    @IBOutlet weak var timerLabel: WKInterfaceTimer!
+    
+    
+    @IBOutlet weak var statusLabel: WKInterfaceLabel!
+    
+    @IBOutlet weak var callButton: WKInterfaceButton!
+    
+    @IBOutlet weak var snoozeButton: WKInterfaceButton!
+    
+    
+    var timer: NSTimer!
+    var timeInterval:Int?
+    
     
     override init(context: AnyObject?) {
         // Initialize variables here.
         super.init(context: context)
         
+        timer = NSTimer.scheduledTimerWithTimeInterval(7.0, target: self, selector: Selector("displayUIElements"), userInfo: nil, repeats: false)
+        
+        
         // Configure interface objects here.
         NSLog("%@ init", self)
     }
-
+    
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
+        
+        
         super.willActivate()
         NSLog("%@ will activate", self)
-        let nowDate:NSDate = NSDate()
-        println("\(nowDate)")
-        timerLabel.setDate(nowDate)
     }
-
+    
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         NSLog("%@ did deactivate", self)
+        
         super.didDeactivate()
     }
-
-    @IBAction func snoozeButton() {
-        
+    
+    
+    func hideUIElements() -> (){
+        self.statusLabel.setHidden(true)
+        self.callButton.setHidden(true)
+        self.snoozeButton.setHidden(true)
     }
     
-    @IBAction func stopButton() {
-        timerLabel.stop()
+    func displayUIElements() ->(){
+        println("timer")
+        self.statusLabel.setHidden(false)
+        self.callButton.setHidden(false)
+        self.snoozeButton.setHidden(false)
     }
+    
+    @IBAction func call() {
+        println("Call button pressed!")
+    }
+    
+    @IBAction func snooze() {
+        println("Snooze button pressed!")
+        
+        hideUIElements()
+        timer = NSTimer.scheduledTimerWithTimeInterval(7.0, target: self, selector: Selector("displayUIElements"), userInfo: nil, repeats: false)
+    }
+    
+    
     
 }
