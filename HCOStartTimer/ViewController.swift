@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
 
+    var audioPlayer = AVAudioPlayer()
+    
     @IBOutlet weak var timerTextField: UITextField!
     
     @IBOutlet weak var phoneTextField: UITextField!
@@ -20,8 +23,14 @@ class ViewController: UIViewController {
     
     @IBAction func startButtonPressed(sender: AnyObject) {
         println("Time: \(timerTextField.text), Phone: \(phoneTextField.text)")
+        playRingTone()
     }
     
+    @IBAction func stopRingTonePlaying(sender: AnyObject) {
+        if audioPlayer.playing {
+            audioPlayer.stop()
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -33,5 +42,17 @@ class ViewController: UIViewController {
     }
 
 
+    
+    func playRingTone() {
+        var alertSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("iphone", ofType: "mp3")!)
+        println(alertSound)
+        
+        var error:NSError?
+        audioPlayer = AVAudioPlayer(contentsOfURL: alertSound, error: &error)
+        audioPlayer.prepareToPlay()
+        audioPlayer.play()
+        
+    }
+    
 }
 

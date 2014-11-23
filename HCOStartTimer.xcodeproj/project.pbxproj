@@ -21,6 +21,7 @@
 		F85F243D1A2271470059E27A /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F85F243C1A2271470059E27A /* Interface.storyboard */; };
 		F85F243F1A2271470059E27A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F85F243E1A2271470059E27A /* Images.xcassets */; };
 		F85F24421A2271470059E27A /* HCOStartTimer WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F85F24251A2271470059E27A /* HCOStartTimer WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F85F244B1A2293FE0059E27A /* iphone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F85F244A1A2293FE0059E27A /* iphone.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		F85F243B1A2271470059E27A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F85F243C1A2271470059E27A /* Interface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Interface.storyboard; sourceTree = "<group>"; };
 		F85F243E1A2271470059E27A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F85F244A1A2293FE0059E27A /* iphone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = iphone.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 		F85F23FE1A22711E0059E27A /* HCOStartTimer */ = {
 			isa = PBXGroup;
 			children = (
+				F85F244A1A2293FE0059E27A /* iphone.mp3 */,
 				F85F24011A22711E0059E27A /* AppDelegate.swift */,
 				F85F24031A22711E0059E27A /* ViewController.swift */,
 				F85F24051A22711E0059E27A /* Main.storyboard */,
@@ -344,6 +347,7 @@
 				F85F24071A22711E0059E27A /* Main.storyboard in Resources */,
 				F85F240C1A22711E0059E27A /* LaunchScreen.xib in Resources */,
 				F85F24091A22711E0059E27A /* Images.xcassets in Resources */,
+				F85F244B1A2293FE0059E27A /* iphone.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -649,6 +653,7 @@
 				F85F241D1A22711E0059E27A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F85F241E1A22711E0059E27A /* Build configuration list for PBXNativeTarget "HCOStartTimerTests" */ = {
 			isa = XCConfigurationList;
@@ -657,6 +662,7 @@
 				F85F24201A22711E0059E27A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F85F24431A2271470059E27A /* Build configuration list for PBXNativeTarget "HCOStartTimer Watch App" */ = {
 			isa = XCConfigurationList;
@@ -665,6 +671,7 @@
 				F85F24451A2271470059E27A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F85F24461A2271470059E27A /* Build configuration list for PBXNativeTarget "HCOStartTimer WatchKit Extension" */ = {
 			isa = XCConfigurationList;
@@ -673,6 +680,7 @@
 				F85F24481A2271470059E27A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
