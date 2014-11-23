@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>282998C9-004F-4093-B5D2-58983A8EBF8F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>HCOStartTimer</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B6884A47440A5F047A76AD8AD2ADAF3AF605CE66</key>
+		<string>https://github.com/iyepes/DismissConversation.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>HCOStartTimer.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B6884A47440A5F047A76AD8AD2ADAF3AF605CE66</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/iyepes/DismissConversation.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B6884A47440A5F047A76AD8AD2ADAF3AF605CE66</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B6884A47440A5F047A76AD8AD2ADAF3AF605CE66</string>
+			<key>IDESourceControlWCCName</key>
+			<string>DismissConversation</string>
+		</dict>
+	</array>
+</dict>
+</plist>

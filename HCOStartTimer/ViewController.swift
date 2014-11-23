@@ -10,6 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var timerTextField: UITextField!
+    
+    @IBOutlet weak var phoneTextField: UITextField!
+    
+    @IBAction func onTap(sender: AnyObject) {
+        self.view.endEditing(true)
+    }
+    
+    @IBAction func startButtonPressed(sender: AnyObject) {
+        println("Time: \(timerTextField.text), Phone: \(phoneTextField.text)")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
