@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6221" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,38 +17,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Time" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rks-qF-lJn">
-                                <rect key="frame" x="112" y="89" width="97" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_0036.PNG" translatesAutoresizingMaskIntoConstraints="NO" id="DvJ-YX-61m">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="5" borderStyle="bezel" placeholder="Time" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rks-qF-lJn">
+                                <rect key="frame" x="16" y="129" width="97" height="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rhw-D6-Ulr">
-                                <rect key="frame" x="112" y="164" width="97" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="(000)-000-0000" borderStyle="bezel" placeholder="Phone" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rhw-D6-Ulr">
+                                <rect key="frame" x="191" y="129" width="113" height="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SEH-S8-zqW">
-                                <rect key="frame" x="114" y="238" width="93" height="30"/>
-                                <state key="normal" title="Start Counter">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SEH-S8-zqW">
+                                <rect key="frame" x="52" y="362" width="61" height="122"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="1" green="0.21568629145622253" blue="0.21568629145622253" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="startButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="nWk-EO-oY0"/>
+                                    <action selector="startButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Xam-cX-a8Q"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0TT-8o-p6s">
-                                <rect key="frame" x="114" y="291" width="95" height="30"/>
-                                <state key="normal" title="&quot;Answer&quot; Call">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0TT-8o-p6s">
+                                <rect key="frame" x="209" y="362" width="61" height="122"/>
+                                <state key="normal" title="Accept">
+                                    <color key="titleColor" red="0.18823531270027161" green="0.85098046064376831" blue="0.45098042488098145" alpha="1" colorSpace="deviceRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="startButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="nw2-7x-WA1"/>
-                                    <action selector="stopRingTonePlaying:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="9Z1-bA-Lud"/>
+                                    <action selector="stopRingTonePlaying:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="g4f-Ze-INo"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="0TT-8o-p6s" firstAttribute="leading" secondItem="SEH-S8-zqW" secondAttribute="trailing" constant="175" id="7e4-5l-9wK"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="0TT-8o-p6s" secondAttribute="bottom" constant="49" id="Ap8-oi-esJ"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="DvJ-YX-61m" secondAttribute="bottom" id="Eh1-eh-wTL"/>
+                            <constraint firstItem="DvJ-YX-61m" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="KMM-wv-15F"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="DvJ-YX-61m" secondAttribute="trailing" constant="-16" id="RNs-wc-nRp"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="SEH-S8-zqW" secondAttribute="bottom" constant="51" id="eGb-zi-ow1"/>
+                            <constraint firstItem="DvJ-YX-61m" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="xK5-sA-brf"/>
+                        </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="WYm-vq-LT5" appends="YES" id="BIX-98-RJU"/>
                         </connections>
@@ -64,9 +80,12 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="74.133333333333326" y="128.74666666666667"/>
+            <point key="canvasLocation" x="74" y="128"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="IMG_0036.PNG" width="750" height="1334"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

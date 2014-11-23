@@ -22,6 +22,7 @@
 		F85F243F1A2271470059E27A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F85F243E1A2271470059E27A /* Images.xcassets */; };
 		F85F24421A2271470059E27A /* HCOStartTimer WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F85F24251A2271470059E27A /* HCOStartTimer WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F85F244B1A2293FE0059E27A /* iphone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F85F244A1A2293FE0059E27A /* iphone.mp3 */; };
+		F85F244D1A22986D0059E27A /* IMG_0036.PNG in Resources */ = {isa = PBXBuildFile; fileRef = F85F244C1A22986D0059E27A /* IMG_0036.PNG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		F85F243C1A2271470059E27A /* Interface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Interface.storyboard; sourceTree = "<group>"; };
 		F85F243E1A2271470059E27A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F85F244A1A2293FE0059E27A /* iphone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = iphone.mp3; sourceTree = "<group>"; };
+		F85F244C1A22986D0059E27A /* IMG_0036.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_0036.PNG; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 				F85F24011A22711E0059E27A /* AppDelegate.swift */,
 				F85F24031A22711E0059E27A /* ViewController.swift */,
 				F85F24051A22711E0059E27A /* Main.storyboard */,
+				F85F244C1A22986D0059E27A /* IMG_0036.PNG */,
 				F85F24081A22711E0059E27A /* Images.xcassets */,
 				F85F240A1A22711E0059E27A /* LaunchScreen.xib */,
 				F85F23FF1A22711E0059E27A /* Supporting Files */,
@@ -347,6 +350,7 @@
 				F85F24071A22711E0059E27A /* Main.storyboard in Resources */,
 				F85F240C1A22711E0059E27A /* LaunchScreen.xib in Resources */,
 				F85F24091A22711E0059E27A /* Images.xcassets in Resources */,
+				F85F244D1A22986D0059E27A /* IMG_0036.PNG in Resources */,
 				F85F244B1A2293FE0059E27A /* iphone.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
