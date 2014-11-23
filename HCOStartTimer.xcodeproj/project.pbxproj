@@ -1,0 +1,680 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F85F24021A22711E0059E27A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85F24011A22711E0059E27A /* AppDelegate.swift */; };
+		F85F24041A22711E0059E27A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85F24031A22711E0059E27A /* ViewController.swift */; };
+		F85F24071A22711E0059E27A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F85F24051A22711E0059E27A /* Main.storyboard */; };
+		F85F24091A22711E0059E27A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F85F24081A22711E0059E27A /* Images.xcassets */; };
+		F85F240C1A22711E0059E27A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F85F240A1A22711E0059E27A /* LaunchScreen.xib */; };
+		F85F24181A22711E0059E27A /* HCOStartTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85F24171A22711E0059E27A /* HCOStartTimerTests.swift */; };
+		F85F24281A2271470059E27A /* WatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F85F24271A2271470059E27A /* WatchKit.framework */; };
+		F85F242E1A2271470059E27A /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85F242D1A2271470059E27A /* InterfaceController.swift */; };
+		F85F24301A2271470059E27A /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85F242F1A2271470059E27A /* NotificationController.swift */; };
+		F85F24321A2271470059E27A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F85F24311A2271470059E27A /* Images.xcassets */; };
+		F85F24361A2271470059E27A /* HCOStartTimer Watch App.app in Resources */ = {isa = PBXBuildFile; fileRef = F85F24351A2271470059E27A /* HCOStartTimer Watch App.app */; };
+		F85F243D1A2271470059E27A /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F85F243C1A2271470059E27A /* Interface.storyboard */; };
+		F85F243F1A2271470059E27A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F85F243E1A2271470059E27A /* Images.xcassets */; };
+		F85F24421A2271470059E27A /* HCOStartTimer WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F85F24251A2271470059E27A /* HCOStartTimer WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F85F24121A22711E0059E27A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F85F23F41A22711E0059E27A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F85F23FB1A22711E0059E27A;
+			remoteInfo = HCOStartTimer;
+		};
+		F85F24371A2271470059E27A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F85F23F41A22711E0059E27A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F85F24341A2271470059E27A;
+			remoteInfo = "HCOStartTimer Watch App";
+		};
+		F85F24401A2271470059E27A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F85F23F41A22711E0059E27A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F85F24241A2271470059E27A;
+			remoteInfo = "HCOStartTimer WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F85F24491A2271470059E27A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F85F24421A2271470059E27A /* HCOStartTimer WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F85F23FC1A22711E0059E27A /* HCOStartTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HCOStartTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F85F24001A22711E0059E27A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F85F24011A22711E0059E27A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F85F24031A22711E0059E27A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F85F24061A22711E0059E27A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F85F24081A22711E0059E27A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F85F240B1A22711E0059E27A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F85F24111A22711E0059E27A /* HCOStartTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HCOStartTimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F85F24161A22711E0059E27A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F85F24171A22711E0059E27A /* HCOStartTimerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HCOStartTimerTests.swift; sourceTree = "<group>"; };
+		F85F24251A2271470059E27A /* HCOStartTimer WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "HCOStartTimer WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F85F24271A2271470059E27A /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = System/Library/Frameworks/WatchKit.framework; sourceTree = SDKROOT; };
+		F85F242B1A2271470059E27A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F85F242C1A2271470059E27A /* PushNotificationPayload.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PushNotificationPayload.json; sourceTree = "<group>"; };
+		F85F242D1A2271470059E27A /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		F85F242F1A2271470059E27A /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		F85F24311A2271470059E27A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F85F24351A2271470059E27A /* HCOStartTimer Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HCOStartTimer Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F85F243B1A2271470059E27A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F85F243C1A2271470059E27A /* Interface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Interface.storyboard; sourceTree = "<group>"; };
+		F85F243E1A2271470059E27A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F85F23F91A22711E0059E27A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F85F240E1A22711E0059E27A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F85F24221A2271470059E27A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F85F24281A2271470059E27A /* WatchKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F85F23F31A22711E0059E27A = {
+			isa = PBXGroup;
+			children = (
+				F85F23FE1A22711E0059E27A /* HCOStartTimer */,
+				F85F24141A22711E0059E27A /* HCOStartTimerTests */,
+				F85F24291A2271470059E27A /* HCOStartTimer WatchKit Extension */,
+				F85F24391A2271470059E27A /* HCOStartTimer Watch App */,
+				F85F24261A2271470059E27A /* Frameworks */,
+				F85F23FD1A22711E0059E27A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F85F23FD1A22711E0059E27A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F85F23FC1A22711E0059E27A /* HCOStartTimer.app */,
+				F85F24111A22711E0059E27A /* HCOStartTimerTests.xctest */,
+				F85F24251A2271470059E27A /* HCOStartTimer WatchKit Extension.appex */,
+				F85F24351A2271470059E27A /* HCOStartTimer Watch App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F85F23FE1A22711E0059E27A /* HCOStartTimer */ = {
+			isa = PBXGroup;
+			children = (
+				F85F24011A22711E0059E27A /* AppDelegate.swift */,
+				F85F24031A22711E0059E27A /* ViewController.swift */,
+				F85F24051A22711E0059E27A /* Main.storyboard */,
+				F85F24081A22711E0059E27A /* Images.xcassets */,
+				F85F240A1A22711E0059E27A /* LaunchScreen.xib */,
+				F85F23FF1A22711E0059E27A /* Supporting Files */,
+			);
+			path = HCOStartTimer;
+			sourceTree = "<group>";
+		};
+		F85F23FF1A22711E0059E27A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F85F24001A22711E0059E27A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F85F24141A22711E0059E27A /* HCOStartTimerTests */ = {
+			isa = PBXGroup;
+			children = (
+				F85F24171A22711E0059E27A /* HCOStartTimerTests.swift */,
+				F85F24151A22711E0059E27A /* Supporting Files */,
+			);
+			path = HCOStartTimerTests;
+			sourceTree = "<group>";
+		};
+		F85F24151A22711E0059E27A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F85F24161A22711E0059E27A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F85F24261A2271470059E27A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F85F24271A2271470059E27A /* WatchKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F85F24291A2271470059E27A /* HCOStartTimer WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F85F242D1A2271470059E27A /* InterfaceController.swift */,
+				F85F242F1A2271470059E27A /* NotificationController.swift */,
+				F85F24311A2271470059E27A /* Images.xcassets */,
+				F85F242A1A2271470059E27A /* Supporting Files */,
+			);
+			path = "HCOStartTimer WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		F85F242A1A2271470059E27A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F85F242B1A2271470059E27A /* Info.plist */,
+				F85F242C1A2271470059E27A /* PushNotificationPayload.json */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F85F24391A2271470059E27A /* HCOStartTimer Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				F85F243C1A2271470059E27A /* Interface.storyboard */,
+				F85F243E1A2271470059E27A /* Images.xcassets */,
+				F85F243A1A2271470059E27A /* Supporting Files */,
+			);
+			path = "HCOStartTimer Watch App";
+			sourceTree = "<group>";
+		};
+		F85F243A1A2271470059E27A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F85F243B1A2271470059E27A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F85F23FB1A22711E0059E27A /* HCOStartTimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F85F241B1A22711E0059E27A /* Build configuration list for PBXNativeTarget "HCOStartTimer" */;
+			buildPhases = (
+				F85F23F81A22711E0059E27A /* Sources */,
+				F85F23F91A22711E0059E27A /* Frameworks */,
+				F85F23FA1A22711E0059E27A /* Resources */,
+				F85F24491A2271470059E27A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F85F24411A2271470059E27A /* PBXTargetDependency */,
+			);
+			name = HCOStartTimer;
+			productName = HCOStartTimer;
+			productReference = F85F23FC1A22711E0059E27A /* HCOStartTimer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F85F24101A22711E0059E27A /* HCOStartTimerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F85F241E1A22711E0059E27A /* Build configuration list for PBXNativeTarget "HCOStartTimerTests" */;
+			buildPhases = (
+				F85F240D1A22711E0059E27A /* Sources */,
+				F85F240E1A22711E0059E27A /* Frameworks */,
+				F85F240F1A22711E0059E27A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F85F24131A22711E0059E27A /* PBXTargetDependency */,
+			);
+			name = HCOStartTimerTests;
+			productName = HCOStartTimerTests;
+			productReference = F85F24111A22711E0059E27A /* HCOStartTimerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F85F24241A2271470059E27A /* HCOStartTimer WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F85F24461A2271470059E27A /* Build configuration list for PBXNativeTarget "HCOStartTimer WatchKit Extension" */;
+			buildPhases = (
+				F85F24211A2271470059E27A /* Sources */,
+				F85F24221A2271470059E27A /* Frameworks */,
+				F85F24231A2271470059E27A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F85F24381A2271470059E27A /* PBXTargetDependency */,
+			);
+			name = "HCOStartTimer WatchKit Extension";
+			productName = "HCOStartTimer WatchKit Extension";
+			productReference = F85F24251A2271470059E27A /* HCOStartTimer WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		F85F24341A2271470059E27A /* HCOStartTimer Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F85F24431A2271470059E27A /* Build configuration list for PBXNativeTarget "HCOStartTimer Watch App" */;
+			buildPhases = (
+				F85F24331A2271470059E27A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HCOStartTimer Watch App";
+			productName = "HCOStartTimer Watch App";
+			productReference = F85F24351A2271470059E27A /* HCOStartTimer Watch App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F85F23F41A22711E0059E27A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Isabel Yepes";
+				TargetAttributes = {
+					F85F23FB1A22711E0059E27A = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					F85F24101A22711E0059E27A = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = F85F23FB1A22711E0059E27A;
+					};
+					F85F24241A2271470059E27A = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					F85F24341A2271470059E27A = {
+						CreatedOnToolsVersion = 6.2;
+					};
+				};
+			};
+			buildConfigurationList = F85F23F71A22711E0059E27A /* Build configuration list for PBXProject "HCOStartTimer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F85F23F31A22711E0059E27A;
+			productRefGroup = F85F23FD1A22711E0059E27A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F85F23FB1A22711E0059E27A /* HCOStartTimer */,
+				F85F24101A22711E0059E27A /* HCOStartTimerTests */,
+				F85F24241A2271470059E27A /* HCOStartTimer WatchKit Extension */,
+				F85F24341A2271470059E27A /* HCOStartTimer Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F85F23FA1A22711E0059E27A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F85F24071A22711E0059E27A /* Main.storyboard in Resources */,
+				F85F240C1A22711E0059E27A /* LaunchScreen.xib in Resources */,
+				F85F24091A22711E0059E27A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F85F240F1A22711E0059E27A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F85F24231A2271470059E27A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F85F24321A2271470059E27A /* Images.xcassets in Resources */,
+				F85F24361A2271470059E27A /* HCOStartTimer Watch App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F85F24331A2271470059E27A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F85F243D1A2271470059E27A /* Interface.storyboard in Resources */,
+				F85F243F1A2271470059E27A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F85F23F81A22711E0059E27A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F85F24041A22711E0059E27A /* ViewController.swift in Sources */,
+				F85F24021A22711E0059E27A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F85F240D1A22711E0059E27A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F85F24181A22711E0059E27A /* HCOStartTimerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F85F24211A2271470059E27A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F85F24301A2271470059E27A /* NotificationController.swift in Sources */,
+				F85F242E1A2271470059E27A /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F85F24131A22711E0059E27A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F85F23FB1A22711E0059E27A /* HCOStartTimer */;
+			targetProxy = F85F24121A22711E0059E27A /* PBXContainerItemProxy */;
+		};
+		F85F24381A2271470059E27A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F85F24341A2271470059E27A /* HCOStartTimer Watch App */;
+			targetProxy = F85F24371A2271470059E27A /* PBXContainerItemProxy */;
+		};
+		F85F24411A2271470059E27A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F85F24241A2271470059E27A /* HCOStartTimer WatchKit Extension */;
+			targetProxy = F85F24401A2271470059E27A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F85F24051A22711E0059E27A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F85F24061A22711E0059E27A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F85F240A1A22711E0059E27A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F85F240B1A22711E0059E27A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F85F24191A22711E0059E27A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F85F241A1A22711E0059E27A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F85F241C1A22711E0059E27A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = HCOStartTimer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F85F241D1A22711E0059E27A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = HCOStartTimer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F85F241F1A22711E0059E27A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HCOStartTimerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HCOStartTimer.app/HCOStartTimer";
+			};
+			name = Debug;
+		};
+		F85F24201A22711E0059E27A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HCOStartTimerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HCOStartTimer.app/HCOStartTimer";
+			};
+			name = Release;
+		};
+		F85F24441A2271470059E27A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = HCOStartTimer_WatchKit_Extension;
+				INFOPLIST_FILE = "HCOStartTimer Watch App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		F85F24451A2271470059E27A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				IBSC_MODULE = HCOStartTimer_WatchKit_Extension;
+				INFOPLIST_FILE = "HCOStartTimer Watch App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		F85F24471A2271470059E27A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "HCOStartTimer WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F85F24481A2271470059E27A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "HCOStartTimer WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F85F23F71A22711E0059E27A /* Build configuration list for PBXProject "HCOStartTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F85F24191A22711E0059E27A /* Debug */,
+				F85F241A1A22711E0059E27A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F85F241B1A22711E0059E27A /* Build configuration list for PBXNativeTarget "HCOStartTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F85F241C1A22711E0059E27A /* Debug */,
+				F85F241D1A22711E0059E27A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F85F241E1A22711E0059E27A /* Build configuration list for PBXNativeTarget "HCOStartTimerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F85F241F1A22711E0059E27A /* Debug */,
+				F85F24201A22711E0059E27A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F85F24431A2271470059E27A /* Build configuration list for PBXNativeTarget "HCOStartTimer Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F85F24441A2271470059E27A /* Debug */,
+				F85F24451A2271470059E27A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F85F24461A2271470059E27A /* Build configuration list for PBXNativeTarget "HCOStartTimer WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F85F24471A2271470059E27A /* Debug */,
+				F85F24481A2271470059E27A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F85F23F41A22711E0059E27A /* Project object */;
+}
